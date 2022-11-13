@@ -13,16 +13,16 @@ import { logos } from "../components/logos.js";
     <div class="text-6xl font-bold text-white">
       <h2>
         <strong
-          class="bg-clip-text text-transparent bg-gradient-to-l from-[#7C34B3] to-[#34b37c]"
+          class="bg-clip-text text-transparent bg-gradient-to-l from-[#7C34B3] to-[#B37C34]"
           >Tech</strong
         > stack.
       </h2>
     </div>
     <div>
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+      <div class="flex justify-center flex-wrap items-center gap-16">
         {
           logos.map(({ logoUrl, logoAlt }) => (
-            <TechLogo logoUrl={logoUrl} alt={logoAlt} />
+            <div class="w-[25%]"><TechLogo logoUrl={logoUrl} alt={logoAlt} /></div>
           ))
         }
       </div>
