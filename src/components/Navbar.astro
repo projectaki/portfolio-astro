@@ -1,8 +1,13 @@
 <nav class="flex relative justify-center items-center text-white">
-    <h1 class="absolute left-8 text-xl font-bold"><strong class="text-[#34b37c]">A.</strong> M.</h1>
-    <ul class="flex gap-8 text-md" >
+    <h1 class="absolute left-8 text-xl font-bold hidden sm:block"><strong class="text-[#34b37c]">A.</strong> M.</h1>
+    <ul class="gap-8 text-md hidden sm:flex">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#stack">Stack</a></li>
+    </ul>
+    <ul class="flex-1 flex flex-row text-md sm:hidden">
+        <li class="flex-1 flex justify-center items-center"><a href="#home">Home</a></li>
+        <li class="flex-1 flex justify-center items-center"><a href="#about">About</a></li>
+        <li class="flex-1 flex justify-center items-center"><a href="#stack">Stack</a></li>
     </ul>
 </nav>
