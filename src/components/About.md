@@ -1,0 +1,1 @@
+I am a fullstack software engineer. My main interest lies in **algorithms**, but I also create apps.
