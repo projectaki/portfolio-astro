@@ -16,14 +16,16 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={'Akos Madarasz portfolio'} />
-    <meta name="keywords" content="Akos, Madarasz, Software, Engineer">
-    <meta name="author" content="Akos Madarasz">
+    <meta name="description" content={"Akos Madarasz portfolio"} />
+    <meta name="keywords" content="Akos, Madarasz, Software, Engineer" />
+    <meta name="author" content="Akos Madarasz" />
     <title>{title}</title>
   </head>
   <body>
     <div class="relative overflow-hidden min-h-screen flex flex-col">
-      <header class="fixed bottom-0 top-auto sm:bottom-auto sm:top-0 left-0 right-0 z-20 frosted-glass">
+      <header
+        class="fixed bottom-0 top-auto sm:bottom-auto sm:top-0 left-0 right-0 z-20 frosted-glass"
+      >
         <div class="py-4">
           <Navbar />
         </div>
@@ -31,9 +33,6 @@ const { title } = Astro.props;
       <main class="flex-1">
         <slot />
       </main>
-      <footer class="pb-12 sm:pb-0 bg-[#7C34B3]">
-        <Footer />
-      </footer>
     </div>
     <div
       class="bg-clip-text text-transparent bg-gradient-to-l from-[#84C7D0] to-[#34b37c]"
@@ -70,7 +69,7 @@ const { title } = Astro.props;
     /* --tw-gradient-from: #B37C34;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
     --tw-gradient-to: #7C34B3; */
-    color: #7C34B3;
+    color: #7c34b3;
   }
 
   p {
@@ -79,7 +78,8 @@ const { title } = Astro.props;
     word-break: break-all;
     padding-top: 1rem;
     padding-bottom: 1rem;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
   }
 
   .frosted-glass {
@@ -87,5 +87,4 @@ const { title } = Astro.props;
     backdrop-filter: blur(60px);
     -webkit-backdrop-filter: blur(60px);
   }
-
 </style>
